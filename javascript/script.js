@@ -42,18 +42,34 @@ document.getElementById("find-akan-name").addEventListener("submit", function (e
     }
     if (gender && dob) {
         const dates = dob.split("-");
-        if (isNaN(dates[0]) || parseInt(dates[0]) < 1 || dates[0] > 31) {
-            date_has_error("Day of the month should be a valid number and between 1 to 31");
-            return;
+        if (isNaN(dates[0]) || parseInt(dates[0]) < 1 ||  parseInt(dates[0]) > 31) {
+            date_has_error("Invalid date! Enter date between 1 to 31");
+            return;number
+        
         }
         if (isNaN(dates[1]) || parseInt(dates[1]) < 1 || parseInt(dates[1]) > 12) {
-            date_has_error("Month should be a valid number and between 1 to 12")
+            date_has_error("Invalid Month! Enter a month between 1 to 12")
             return;
         }
         if (isNaN(dates[2])) {
             date_has_error("Year should be a valid number")
             return;
         }
+
+                
+        /**additional checks for Feb */
+        //check if it's Feb, it's a leap year and days are more than 29
+        if (parseInt(dates[1]) === 2 && parseInt(dates[2]) % 4 === 0 && parseInt(dates[0]) > 29) {
+            date_has_error("Invalid date! February date should not exceed 29 for a leap year!");
+            return; 
+        }
+
+         //check if it's Feb, it isn't a leap year and days are more than 28
+        if (parseInt(dates[1]) === 2 && parseInt(dates[2]) % 4 !== 0 && parseInt(dates[0]) > 28) {
+            date_has_error("Invalid date! February date should not exceed 28 for a non-leap year!");
+            return; 
+        }
+
         /*
 
         if (dates[2] > 2022) {
