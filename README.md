@@ -1,6 +1,8 @@
 # Akan Naming Site
 
-#### By Abishag Maitha
+#### Author
+Abishag Maitha
+
 
 ## Description
 <p>This is a site to help users get their Akan names according to the Akan naming systems in Ghana. The user is required to enter their date of birth and gender. The system gets the day of the week according to the given date of birth and assigns the user the Akan name.</p>
@@ -19,6 +21,7 @@
 * CSS - which was used to add styling and responsiveness
 
 * Javascript - was used to define the functions responsible for calculating the day of week and outputting the Akan names
+
 
 ## MIT LICENSE
 MIT License
@@ -40,5 +43,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## Author's Information
+Email: abishag.maitha@student.moringaschool.com
+Contact: 0719816825
 
 ## Live Link
