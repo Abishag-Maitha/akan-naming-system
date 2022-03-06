@@ -1,19 +1,22 @@
 html {
     -webkit-text-size-adjust: 100%;
-    padding-bottom: 40px;
+    padding-bottom: 4em;
 }
-
+strong{
+	color: #771111;
+}
 body {
     font-family: sans-serif;
-    line-height: 15px;
-    max-width: 400px;
+    line-height: 1.5em;
+    max-width: 40em;
     padding: 0 2%;
     margin: auto
+
+
 }
 
-
 h1 {
-    color: #e77676;
+    color: #771111;
 }
 
 .text-input {
