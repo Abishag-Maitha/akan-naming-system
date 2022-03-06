@@ -38,4 +38,29 @@ fieldset {
 .error {
     color: #990000
 }
-
+.description .content {
+	padding-bottom: 6px;
+}
+.names-table{
+	padding-bottom: 40px;
+}
+.names-table table{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+}
+.names-table table, th, td {
+	border: 1px solid;
+	border-color: #0c0606;
+}
+.names-table th,td {
+	height: 33px;
+}
+.names-table th{
+	font-size: 16px;
+}
+.names-table td {
+	padding-left: 6px;
+	font-size: 14px;
+}
