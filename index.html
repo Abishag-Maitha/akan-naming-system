@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akan-Names</title>
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1>Akan Names</h1>
+<form id="find-akan-name" method="post" action="javascript:void(this)">
+    <fieldset>
+        <legend>Enter your Date of Birth to get your Akan Name</legend>
+        <div style="padding-top: 1em">
+            <label for="dob">Date of Birth (dd-mm-yyyy)</label>
+            <input class="text-input" type="text" id="dob" name="date-of-birth" value="" placeholder="dd-mm-yyyy">
+            <div class="error" id="dob-error" style="display: none"></div>
+        </div>
+
+        <div style="padding-top: 1em">
+            <label for="gender">Gender</label>
+            <select class="text-input" name="gender" id="gender">
+                <option value="">Select</option>
+                <option value="m">Male</option>
+                <option value="f">Female</option>
+            </select>
+            <div class="error" id="gender-error" style="display: none"></div>
+            <input type="submit" id="submit" name="submit" value="Submit">
+        </div>
+    </fieldset>
+    <div style="display: none" id="answer" class="answer">
+        <p id="answer-text"></p>
+    </div>
+</form>
+<script type="text/javascript" src="javascript/script.js"></script>
+</body>
+</html>
