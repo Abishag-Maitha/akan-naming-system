@@ -1,6 +1,6 @@
 html {
     -webkit-text-size-adjust: 100%;
-    padding-bottom: 4em;
+    padding-bottom: 64px;
     background-color: #e7d9da;
 }
 strong{
@@ -8,8 +8,8 @@ strong{
 }
 body {
     font-family: sans-serif;
-    line-height: 1.5em;
-    max-width: 40em;
+    line-height: 24px;
+    max-width: 640px;
     padding: 0 2%;
     margin: auto
 
@@ -22,21 +22,23 @@ h1 {
 .text-input {
     width: 96%;
     display: block;
-    padding: .5em 1%;
-    margin-bottom: 1.5em;
-    font-size: 1em
+    padding: 8px 1%;
+    margin-bottom: 24px;
+    font-size: 16px
 }
 
 .answer {
     width: 96%;
     display: block;
-    padding: .5em 1%;
-    margin-bottom: 1.5em;
-    font-size: 1em
+    padding: 8px 1%;
+    margin-bottom: 24px;
+    font-size: 16px
 }
 
 fieldset {
-    margin-bottom: 1.5em
+    margin-bottom: 24px
+    style="display: none"
+
 }
 .error {
     color: #990000
